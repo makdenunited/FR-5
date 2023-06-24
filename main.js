@@ -7,23 +7,23 @@ const ERROR_M2 = 'Вы не ввели достаточно параметров
 switch (x) {
 	case '+':
 	case 'add':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a+x+b)) :
-			confirm(`${a} ${x} ${b}`+` = `+`${a+b}`);
+		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a + x + b)) :
+			confirm(`${a} ${x} ${b}`+` = `+`${a + b}`);
 	break;
 	case '-':
 	case 'subtract':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a+x+b)) :
-			confirm(`${a} ${x} ${b}`+` = `+`${a-b}`);
+		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a + x + b)) :
+			confirm(`${a} ${x} ${b}`+` = `+`${a - b}`);
 	break;
 	case '*':
 	case 'multi':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a+x+b)) :
-			confirm(`${a} ${x} ${b}`+` = `+`${a*b}`);
+		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a + x + b)) :
+			confirm(`${a} ${x} ${b}`+` = `+`${a * b}`);
 	break;
 	case '/':
 	case 'division':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a+x+b)) :
-			b === 0 ? confirm(`На ноль делить нельзя!`) : confirm(`${a}${x}${b}`+`=`+`${a/b}`);
+		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: `+(a + x + b)) :
+			b === 0 ? confirm(`На ноль делить нельзя!`) : confirm(`${a}${x}${b}`+`=`+`${a / b}`);
 		break;
 	default:
 		confirm(x === '' ? 'Вы не ввели оператор.' : ERROR_M2);
