@@ -1,5 +1,5 @@
 let a = parseFloat(prompt('Введите первое число:'));
-let x = prompt('Введите оператор (+ || add, - || subtract, * || multi, / || division):');
+let x = prompt('Введите оператор (+ || add, - || sub, * || mul, / || div):');
 let b = parseFloat(prompt('Введите 2 число:'));
 const ERROR_M1 = 'Вам стоит подробнее узнать про числа.';
 const ERROR_M2 = 'Вы не ввели достаточно параметров или...\nВам стоит подробнее узнать про числа и операторы.';
@@ -7,25 +7,25 @@ const ERROR_M2 = 'Вы не ввели достаточно параметров
 switch (x) {
 	case '+':
 	case 'add':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
-			confirm(`${a} ${x} ${b}`+` = `+`${a + b}`);
+		Number.isNaN(a) || Number.isNaN(b) ? alert(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
+			alert(`${a} ${x} ${b}`+` = `+`${a + b}`);
 		break;
 	case '-':
-	case 'subtract':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
-			confirm(`${a} ${x} ${b}`+` = `+`${a - b}`);
+	case 'sub':
+		Number.isNaN(a) || Number.isNaN(b) ? alert(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
+			alert(`${a} ${x} ${b}`+` = `+`${a - b}`);
 		break;
 	case '*':
-	case 'multi':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
-			confirm(`${a} ${x} ${b}`+` = `+`${a * b}`);
+	case 'mul':
+		Number.isNaN(a) || Number.isNaN(b) ? alert(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
+			alert(`${a} ${x} ${b}`+` = `+`${a * b}`);
 		break;
 	case '/':
-	case 'division':
-		Number.isNaN(a) || Number.isNaN(b) ? confirm(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
-			b === 0 ? confirm(`На ноль делить нельзя!!`) : confirm(`${a}${x}${b}`+`=`+`${a / b}`);
+	case 'div':
+		Number.isNaN(a) || Number.isNaN(b) ? alert(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
+			b === 0 ? alert(`На ноль делить нельзя!!`) : alert(`${a}${x}${b}`+`=`+`${a / b}`);
 		break;
 	default:
-		confirm(x === '' ? 'Вы не ввели оператор.' : ERROR_M2);
+		alert(x === '' ? 'Вы не ввели оператор.' : ERROR_M2);
 		break;
 }
