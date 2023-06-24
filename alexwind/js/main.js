@@ -1,17 +1,32 @@
-// let a = 1;
-// let b = 2;
-// let operation = 'multy';
+const MULTY = 'multy';
+const ADD = 'add';
+const SUBTRACT = 'subtract';
 
-// switch (operation) {
-//     case 'add':
-//         return a + b;
-   
-//     case 'multy':
-//         return a * b;
-       
-//     case 'subtract':
-//         return a - b;        
-// }
+function calt(operation, FirstNumber, SecondNumber) {
+
+    if(typeof FirstNumber != 'number' || typeof SecondNumber != 'number') {
+       return alert('Введены не коректные данные')       
+    } 
+
+    switch (operation) {
+        case 'add':
+            return FirstNumber + SecondNumber;
+
+        case 'multy':
+            return FirstNumber * SecondNumber;
+        
+        case 'subtract':
+            return FirstNumber - SecondNumber;        
+    }
+}
+
+calt(ADD, 1, 2);
+
+
+
+
+
+
 
 // switch (browser) {
 //     case 'Edge':
@@ -59,23 +74,23 @@
 // }
 
 
-const number = +prompt('Введите число между 0 и 3', '');
+// const number = +prompt('Введите число между 0 и 3', '');
 
-switch(number) {
-    case 0: 
-        alert('Вы ввели число 0');
-        break
+// switch(number) {
+//     case 0: 
+//         alert('Вы ввели число 0');
+//         break
 
-    case 1: 
-        alert('Вы ввели число 1');
-        break
+//     case 1: 
+//         alert('Вы ввели число 1');
+//         break
 
-    case 2:
-    case 3:   
-        alert('Вы ввели число 2, либо 3');
-        break
+//     case 2:
+//     case 3:   
+//         alert('Вы ввели число 2, либо 3');
+//         break
  
-    default:
-        alert('вы ввели не 0, 1, 2 и не три')
-}
+//     default:
+//         alert('вы ввели не 0, 1, 2 и не три')
+// }
 
