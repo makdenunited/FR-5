@@ -4,7 +4,7 @@ let x = prompt('Введите оператор (+ || add, - || sub, * || mul, /
 let b = parseFloat(prompt('Введите 2 число:'));
 const ERROR_M1 = 'Вам стоит подробнее узнать про числа.';
 const ERROR_M2 = 'Вы не ввели достаточно параметров или...\nВам стоит подробнее узнать про числа и операторы.';
-
+// todo: написать функцию для проверки а и b
 switch (x) {
 	case '+':
 	case 'add':
@@ -24,7 +24,7 @@ switch (x) {
 	case '/':
 	case 'div':
 		Number.isNaN(a) || Number.isNaN(b) ? alert(`${ERROR_M1}\nВы пытались: ` + (a + x + b)) :
-			b === 0 ? alert(`На ноль делить нельзя!!`) : alert(`${a}${x}${b}` + `=` + `${a / b}`);
+			b === 0 ? alert(`На ноль делить нельзя!!`) : alert(`${a} ${x} ${b}` + ` = ` + `${a / b}`);
 		break;
 	default:
 		alert(x === '' ? 'Вы не ввели оператор.' : ERROR_M2);
