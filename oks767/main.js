@@ -1,3 +1,7 @@
+let a = +prompt('Введите число', '');
+let b = +prompt('Введите второе число', '');
+let operation = prompt('Введите действие: add, multi, substract', '');
+let c;
 function calc(a, b, operation) {
   switch (operation) {
     case 'add':
@@ -19,8 +23,5 @@ function calc(a, b, operation) {
     alert(c);
   }
 }
-let a = +prompt('Введите число', '');
-let b = +prompt('Введите второе число', '');
-let operation = prompt('Введите действие: add, multi, substract', '');
 
 calc(a, b, operation);
