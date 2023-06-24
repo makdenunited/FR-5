@@ -1,14 +1,14 @@
-function calc(operation,a,b){
-    if(operation === 'add'){
-        return a + b;
-    } else if(operation === 'multi'){
-        return a * b;
-    } else if(operation === 'sub'){
-        return a - b;
-    } else {
-        return 'Error'
-    }
-    
-}
 
-console.log(calc('sub', 6 ,2, ))
+function calc(operation,a,b){
+    switch(operation){
+        case  'add':
+            return a+b;
+        case  "multi":
+            return a * b;
+        case 'sub':
+            return a - b;
+        default:
+            return 'Error'
+    }
+}
+console.log(calc('sub', 6 ,2))
