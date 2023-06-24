@@ -1,39 +1,35 @@
 //Задача 2
-// Переписал на Switch, добавил проверку типа полученных данных и его преобразование.
-// upd 24.06.2023 Добавил проверку на NaN, вынес преобразование к Number в отдельную функцию.
 const ADD = "add";
 const MULTI = "multi";
 const SUBTRACT = "subtract";
 
-function updateTypeToNumber(value) {
-  return Number(value);
-}
-
-function checkDataType(value) {
-  if (typeof value === "number") {
-    return value;
-  } else if (isNaN(value)) {
-    console.log("Упс, получен NaN. Похоже вы ввели текст, ожидалось число.");
-    return value + " - полученные значения";
-  } else {
-    console.log("Получен String, ожидался Number. Приводим к нужному типу..");
-    return updateTypeToNumber(value);
-  }
+function checkCorrectType(value) {
+  return typeof value === "number" ? true : false;
 }
 
 function calc(operation, a, b) {
-  a = checkDataType(a);
-  b = checkDataType(b);
+  a = Number(a);
+  b = Number(b);
+
+  if (isNaN(a) || isNaN(b)) {
+    return "Некоректный тип данных";
+  }
 
   switch (operation) {
     case ADD:
-      return a + b;
+      if (checkCorrectType(a) && checkCorrectType(b)) {
+        return a + b;
+      }
 
     case MULTI:
-      return a * b;
+      if (checkCorrectType(a) && checkCorrectType(b)) {
+        return a * b;
+      }
 
     case SUBTRACT:
-      return a - b;
+      if (checkCorrectType(a) && checkCorrectType(b)) {
+        return a - b;
+      }
 
     default:
       return "Неизвестная операция";
