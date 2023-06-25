@@ -1,8 +1,8 @@
-// Switch
+ // Switch
 function сalc(operation, a, b) {
     switch (operation) {
         case 'add':
-            return a + b;
+            return Number(a) + Number(b);
         break;
         case 'multi':
             return a * b;
@@ -14,7 +14,6 @@ function сalc(operation, a, b) {
     }
 }
 
-console.log(сalc('add', 1, 2));
+console.log(сalc('add', '1', 2));
 console.log(сalc('multi', 1, 2));
 console.log(сalc('subtract', 3, 2));
-console.log(сalc('division', 10, 5));
