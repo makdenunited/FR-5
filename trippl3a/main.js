@@ -1,13 +1,25 @@
+const ADD = 'add'
+const MULTI = 'multi'
+const SUBTR = 'subtract'
+const DIV = 'division'
+
+function isNum(n) {
+    return !isNaN(n)
+}
+
+
 function calc(operation, a, b) {
-    if (typeof (operation) == 'string' && (typeof (a) == 'number' && typeof (b) == 'number')) {
+    a = Number(a)
+    b = Number(b)
+    if (typeof (operation) == 'string' && isNum(a) && isNum(b)) {
         switch (operation) {
-            case 'add':
+            case ADD:
                 return a + b
-            case 'multi':
+            case MULTI:
                 return a * b
-            case 'subtract':
+            case SUBTR:
                 return a - b
-            case 'division':
+            case DIV:
                 div_result = a / b
                 if (div_result === Infinity || div_result === -Infinity) {
                     return 'division by zero'
@@ -25,7 +37,7 @@ console.log(calc('add', 2, 7))
 console.log(calc('subtract', 24, 10))
 console.log(calc('123', 123, 123))
 console.log(calc('add'))
-console.log(calc('add', '123', 12))
+console.log(calc('add', '123', '12'))
 console.log(calc('division', -42, 0))
 console.log(calc('division', 54, 27))
 console.log(calc('division', 54, 10))
