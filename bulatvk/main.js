@@ -1,10 +1,9 @@
-function calc() {
 let a = parseFloat(prompt('Введите первое число:'));
 let x = prompt('Введите оператор (+ || add, - || sub, * || mul, / || div):');
 let b = parseFloat(prompt('Введите 2 число:'));
 const ERROR_M1 = 'Вам стоит подробнее узнать про числа.';
 const ERROR_M2 = 'Вы не ввели достаточно параметров или...\nВам стоит подробнее узнать про числа и операторы.';
-// todo: написать функцию для проверки а и b
+// todo: вынести проверку а и b из switch
 switch (x) {
 	case '+':
 	case 'add':
@@ -30,5 +29,3 @@ switch (x) {
 		alert(x === '' ? 'Вы не ввели оператор.' : ERROR_M2);
 		break;
 }
-}
-calc();
