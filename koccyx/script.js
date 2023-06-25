@@ -1,13 +1,13 @@
 function calc1(operation, a, b) {
     switch(operation) {
         case 'add':
-        return a + b;
+            return a + b;
         case 'multi':
-        return a * b;
+            return a * b;
         case 'substract':
-        return a - b;
+            return a - b;
         default: 
-        return 'wrong operation';
+            return 'wrong operation';
     }
 }
 
