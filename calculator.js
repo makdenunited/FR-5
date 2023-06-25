@@ -7,7 +7,7 @@ const multi = '*';
 function calculator(firstOperand, secondOperand, operation) { 
   switch (operation) {
     case plus:
-      return Number(firstOperand + secondOperand);
+      return Number(firstOperand) + Number(secondOperand);
     case subtract:
       return firstOperand - secondOperand;
     case multi:
