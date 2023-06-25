@@ -1,0 +1,14 @@
+const firstNumber = +prompt('Введите первое число', '');
+const secondNumber = +prompt('Введите второе чило', '');
+const calc = prompt('Введите математическое действие', '');
+switch(calc) {
+    case 'add':
+        alert(firstNumber + secondNumber);
+        break;
+    case 'multi':
+        alert(firstNumber * secondNumber);
+        break;
+    case 'subtract':
+        alert(firstNumber - secondNumber);
+        break;
+}
