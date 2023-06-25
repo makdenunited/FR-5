@@ -10,5 +10,4 @@ function checkAge(age) {
       console.log("Good.");
   }
 }
-
-
+console.log(18);
