@@ -1,14 +1,19 @@
 function calc (operation, a, b) {
-    if (typeof a === number && typeof b === number) {}
+    if (typeof a == 'number' && typeof b == 'number') {
         switch (operation) {
             case 'sum':
                 return a + b;
             case 'multiply':
                 return a * b;
-            case 'subtrackt':
+            case 'subtract':
                 return a - b;
-            default: console.log('something went wrong');   
-        }   
+            default: 
+                console.log('unknown operation'); 
+                return NaN;  
+        }     
+    } 
+    else return NaN;
 }
 
-calc('sum', 100, 1)
+let result = calc('sum', 100, 2);
+console.log(result);
