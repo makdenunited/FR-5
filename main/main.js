@@ -11,4 +11,4 @@ function checkAge(age) {
   }
 }
 
-checkAge(18);
+
