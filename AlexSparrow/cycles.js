@@ -26,7 +26,7 @@ function cycleFor() {
 
 
 function showResult(odd, even, iter) {
-    return console.log(`В диапазоне чисел от 0 до ${iter}: четных чисел - ${odd}, нечетных - ${even} `)
+    return console.log(`В диапазоне чисел от 0 до ${iter}: четных чисел - ${even}, нечетных - ${odd} `)
 }
 
 function countingNumbers (iter) {
@@ -34,9 +34,9 @@ function countingNumbers (iter) {
     let even=0;
     for (let i=0; i<=iter; i++) {
         if (i % 2 == 0) {
-            odd+=1;
-        } else {
             even+=1;
+        } else {
+            odd+=1;
         }
     }
     showResult(odd, even, iter)
