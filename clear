@@ -1,0 +1,38 @@
+[33mcommit 3d7cf778d34c18cb1e36cf0c8e17e24110436407[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Artem <artdimitrov@gmail.com>
+Date:   Sat Jun 24 16:53:57 2023 +0300
+
+    Delete index.html
+
+[33mcommit c2ca32ddb5354249356b61787c21ee6e41d9d12e[m
+Author: Artem <artdimitrov@gmail.com>
+Date:   Sat Jun 24 16:53:49 2023 +0300
+
+    Delete main.js
+
+[33mcommit 9001483013a5e4562b375afc35219e2cdf0ec666[m
+Merge: b995d7b 573df37
+Author: Dima <61251772+DimaSU2020@users.noreply.github.com>
+Date:   Sat Jun 24 16:46:41 2023 +0300
+
+    Merge pull request #3 from StradaOne/popovaov28/practice-13
+    
+    init commit
+
+[33mcommit 573df37a1bd246c061f90d2476089e0b3ec6be50[m
+Author: vxrossa <ibasalaev@icloud.com>
+Date:   Sat Jun 24 19:32:41 2023 +0600
+
+    init commit
+
+[33mcommit b995d7b6f9008d111ac2a103baea338ac974cbf6[m
+Author: Dima <61251772+DimaSU2020@users.noreply.github.com>
+Date:   Sat Jun 24 14:46:15 2023 +0300
+
+    Update README.md
+
+[33mcommit aa1c3ab7291a8b45d18c91da43e6ee32314f3b3e[m
+Author: Dima <61251772+DimaSU2020@users.noreply.github.com>
+Date:   Sat Jun 24 14:21:43 2023 +0300
+
+    Initial commit
