@@ -1,26 +1,31 @@
-// task - 13 Switch calc
+// Цикл while от 1 до 19
 
-function calc(operation, a, b) {
-  if (typeof a !== "number" || typeof b !== "number") {
-    return "Пожалуйста, введите числа";
-  }
-
-  switch (operation) {
-    case "add":
-      return a + b;
-
-    case "multi":
-      return a * b;
-
-    case "subtract":
-      return a - b;
-
-    default:
-      return "Недопустимая операция";
-  }
+let i = 1;
+while (i <= 20) {
+  console.log(i);
+  i = i + 1;
 }
 
-console.log(calc("add", 1, 2));
-console.log(calc("multi", 4, 2));
-console.log(calc("subtract", 3, 2));
-console.log(calc("add", 1, "one"));
+// Цикл do while от 1 до 19
+
+let k = 1;
+
+do {
+  console.log(i);
+  i = k + 1;
+} while (k < 20);
+
+// Цикл for от 1 до 19
+
+for (let j = 1; j < 20; j++) {
+  console.log(j);
+}
+
+// Пропускаем итерацию, когда i равно 2 c помощью continue
+
+for (var i = 0; i < 5; i++) {
+  if (i === 2) {
+    continue;
+  }
+  console.log(i);
+}
