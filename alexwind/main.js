@@ -1,5 +1,3 @@
-let odd;
-let even;
 let OddCounter = 0;
 let EvenCounter = 0;
 
