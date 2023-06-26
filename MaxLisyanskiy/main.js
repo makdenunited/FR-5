@@ -4,7 +4,7 @@ function handleWhile() {
 
     while (i < 20) {
         console.log(i);
-        i++
+        i++;
     }
 }
 handleWhile();
@@ -17,7 +17,21 @@ function handleDoWhile() {
         i++;
     } while (i < 20);
 }
-handleDoWhile()
+handleDoWhile();
+
+function handleWhileWithBreak() {
+    let i = 1;
+
+    while (true) {
+        if (i < 20) {
+            console.log(i);
+            i++;
+        } else {
+            break;
+        }
+    }
+}
+handleWhileWithBreak();
 
 
 /***** For *****/
@@ -27,3 +41,11 @@ function handleFor() {
     }
 }
 handleFor();
+
+function handleForWithContinue() {
+    for (let i = 1; i < 100; i++) {
+        if (i > 19) continue;
+        console.log(i);
+    }
+}
+handleForWithContinue();
