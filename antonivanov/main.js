@@ -29,3 +29,19 @@ for (var l = 0; i < 5; i++) {
   }
   console.log(i);
 }
+
+
+// Цикл до 13 и на каждой итерации получаем лог количества четных и нечетных чисел
+
+let evenCount = 0;
+let oddCount = 0;
+
+for (let num = 1; num <= 13; num++) {
+  if (num % 2 === 0) {
+    evenCount++;
+    continue;
+  }
+  
+  oddCount++;
+  console.log(`Четные: ${evenCount}, Нечетные: ${oddCount}`);
+}
