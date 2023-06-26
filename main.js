@@ -2,17 +2,22 @@
 let a = +prompt("Введите цифру", "");
 let b = +prompt("Введите цифру ", "");
 let operation = prompt("Выполните действие", "");
-
+function calc(a, b, operation){
     switch(operation){
       case "add" :
-         alert(a + b);
-       break;   
+        return a + b;
+       
       case "multi" :
-        alert(a * b);
-      break;
+        return  a * b;
+        
       case "subtract" :
-        alert(a - b);
-      break;
+          return a - b;
       default:
          alert("не число либо не верное действие");
-    };
+    }
+ };
+
+ let result = calc( a, b, operation);
+ alert(result);
+
+ 
