@@ -23,8 +23,8 @@ for (let j = 1; j < 20; j++) {
 
 // Пропускаем итерацию, когда i равно 2 c помощью continue
 
-for (var i = 0; i < 5; i++) {
-  if (i === 2) {
+for (var l = 0; i < 5; i++) {
+  if (l === 2) {
     continue;
   }
   console.log(i);
