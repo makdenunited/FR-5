@@ -1,20 +1,31 @@
-function calc(operation, a, b) {
-  switch (operation) {
-    case 'add':
-      a + b;
-      console.log(a + b);
-      break;
-    case 'multi':
-      a * b;
-      console.log(a * b);
-      break;
-    case 'subtract':
-      a - b;
-      console.log(a - b);
-      break;
-  }
+let i = 1;
+
+while (i < 4) {
+  console.log(i);
+  i = i + 1;
 }
 
-calc('add', 1, 2);
-calc('multi', 1, 2);
-calc('subtract', 3, 2);
+let i = 5;
+do {
+  console.log(i);
+  i = i + 3;
+} while (i < 3);
+
+let i = 1;
+do {
+  console.log(i);
+  i = i + 1;
+} while (i <= 19);
+
+for (let i = 1; i < 4; i++) {
+  console.log(i);
+}
+
+for (let i = 1; i <= 19; i++) {
+  console.log(i);
+}
+
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 1) continue;
+  console.log(i);
+}
