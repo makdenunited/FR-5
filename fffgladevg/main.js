@@ -16,12 +16,16 @@
 //   checkAge(19);
 
 function calc(operation, a, b) {
-    if (operation == 'add'){
-        return a + b;
-    } else if (operation == 'multi'){
-        return a * b;
-    } else if (operation == 'substract') {
-        return a - b;
+    switch (operation){
+        case 'add':
+            return a + b;
+            break;
+        case 'multi':
+            return a * b;
+            break;
+        case 'substract':
+            return a - b;
+            break;
     }
 }
 console.log(calc('add', 1, 5));
