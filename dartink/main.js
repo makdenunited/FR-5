@@ -1,16 +1,34 @@
 function calc (a, b, operation) {
-    switch (operation) {
-        case 'add': 
-            return a + b;
-        case 'multi':
-            return a * b;
-        case 'subtract':
-            return a - b;
-        default:
-            return 'Error in your calculation' 
-    }
+    if (isNaN(a) || isNaN(b)) {
+        return "Check the numbers"
+    } else {
+        switch (operation) {
+            case 'add': 
+                return a + b;
+            case 'multi':
+                return a * b;
+            case 'subtract':
+                return a - b;
+            default:
+                return 'Check the entered operation';       
+        }
+    }    
 }
-  console.log(calc(1, 2, 'add'));
-  console.log(calc(1, 3, 'multi'));
-  console.log(calc(7, 4, 'subtract'));
-  console.log(calc(1, 3, ''));
+  function checkData (a, b, operation) {
+    if (typeof a === "number" && typeof b === "number" && typeof operation === "string") {
+         return calc (a, b, operation);
+    } else {return "Check the entered data"}
+  }
+  function showResult (a, b, operation) {
+    console.log(checkData(a, b, operation));
+  }
+showResult (1, 2, 'add');
+showResult(1, 3, 'multi');
+showResult(7, 4, 'subtract');
+showResult('1', 3, 'multi');
+showResult(1, 3, undefined);
+showResult(1, 3, '');
+showResult(undefined, 3, 'add');
+showResult(NaN, 3, 'add');
+
+
