@@ -1,6 +1,6 @@
 const add = "add";
 const sub = "substract";
-const multi = "multi"
+const multi = "multi";
 function calc(operation, a, b) {
     switch (operation){
         case add:
