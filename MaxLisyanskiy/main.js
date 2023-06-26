@@ -1,4 +1,4 @@
-/* While */
+/***** While *****/
 function handleWhile() {
     let i = 1;
 
@@ -18,3 +18,12 @@ function handleDoWhile() {
     } while (i < 20);
 }
 handleDoWhile()
+
+
+/***** For *****/
+function handleFor() {
+    for (let i = 1; i < 20; i++) {
+        console.log(i);
+    }
+}
+handleFor();
