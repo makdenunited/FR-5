@@ -1,14 +1,11 @@
 const calc = (operation, a, b) => {
     switch (operation) {
       case "add":
-        console.log(a + b);
-        break;
+        return a + b
       case "multi":
-        console.log(a * b);
-        break;
+        return a * b
       case "subtract":
-        console.log(a - b);
-        break;
+        return a - b
       default:
         console.log("Enter operation name");
     }
