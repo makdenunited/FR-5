@@ -1,31 +1,15 @@
-// while
-console.log('------- While -------')
+let odd;
+let even;
+let OddCounter = 0;
+let EvenCounter = 0;
 
-let counterForWhile = 0;
+for (let i = 1; i <= 13; i++) {
 
-while (counterForWhile < 19) {        
-    counterForWhile++
-    console.log(counterForWhile);     
+    if(i % 2 === 0) {
+        OddCounter++
+        console.log('Кол-во четных чисел ' + OddCounter)     
+    } else {
+        EvenCounter++
+        console.log('Кол-во не четных чисел ' + EvenCounter)
+    }
 }
-
-// do while
-
-console.log('------- DoWhile -------')
-
-let counterForDoWhile = 1;
-
-do {
-    console.log(counterForDoWhile);
-    counterForDoWhile++;
-    } while(counterForDoWhile < 20);
-
-// for
-
-console.log('------- for -------')
-
-let counterForCycleFor
-
-for (let counterForCycleFor = 1; counterForCycleFor < 20; counterForCycleFor++) {
-        console.log(counterForCycleFor);
-}
-
