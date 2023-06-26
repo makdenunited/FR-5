@@ -9,8 +9,10 @@ function calc(operation, a, b) {
             return a * b;
         case sub:
             return a - b;
+        default:
+            console.log("неизвестная операция");
     }
 }
-console.log(calc(add, 1, 5));
-console.log(calc(sub, '1', '2'));
-console.log(calc(multi, 2*2, 5));
+console.log(calc(add, Number(1), Number(5)));
+console.log(calc(sub, Number('1'), Number('2')));
+console.log(calc(multi, Number(2*2), Number(5)));
