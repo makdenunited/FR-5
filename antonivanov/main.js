@@ -1,26 +1,27 @@
-// task - 13 Switch calc
+const movieCatalog = {
+  Возмездие: 1993,
+  "Термоядерный пулемёт": "неизвестно",
+  "Стальной воин": 5 > 2,
+};
 
-function calc(operation, a, b) {
-  if (typeof a !== "number" || typeof b !== "number") {
-    return "Пожалуйста, введите числа";
-  }
+console.log(movieCatalog);
+console.log(movieCatalog.Возмездие);
+console.log(movieCatalog["Термоядерный пулемёт"]);
 
-  switch (operation) {
-    case "add":
-      return a + b;
+movieCatalog["Шум"] = "города";
+movieCatalog["Стальной воин"] = 2022;
+delete movieCatalog["Термоядерный пулемёт"];
 
-    case "multi":
-      return a * b;
+console.log(movieCatalog);
 
-    case "subtract":
-      return a - b;
-
-    default:
-      return "Недопустимая операция";
-  }
-}
-
-console.log(calc("add", 1, 2));
-console.log(calc("multi", 4, 2));
-console.log(calc("subtract", 3, 2));
-console.log(calc("add", 1, "one"));
+const carCatalog = {
+  list: {
+    BMW: 5,
+    "Mersedes Benz": "E",
+    Audi: "Q7",
+  },
+  log() {
+    console.log(this.list);
+  },
+};
+carCatalog.log();
