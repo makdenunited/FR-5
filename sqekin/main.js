@@ -1,4 +1,4 @@
-const ARTISTS_LIKES_MESSAGE = "List of favorite artists \n";
+const FAVORITE_ARTISTS_MESSAGE = "List of favorite artists \n";
 const TOTAL_ARTISTS_MESSAGE = "\nTotal:";
 let artistsTotal = 0;
 
@@ -20,6 +20,6 @@ let musicLibrary = {
   },
 };
 
-console.log(ARTISTS_LIKES_MESSAGE);
+console.log(FAVORITE_ARTISTS_MESSAGE);
 musicLibrary.log();
 console.log(TOTAL_ARTISTS_MESSAGE, artistsTotal);
