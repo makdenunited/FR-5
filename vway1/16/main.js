@@ -20,5 +20,5 @@ delete phoneBook.list["Anna"];
 console.log(phoneBook.list.Olga); // 777777777;
 console.log(phoneBook.list["Igor Igorevich"]); // 777777777;
 
-console.log(phoneBook.list) // одинакого с phoneBook.log();
+console.log(phoneBook.list) // одинаково с phoneBook.log();
 phoneBook.log();
