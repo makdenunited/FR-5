@@ -1,11 +1,16 @@
-let i = 1;
+let phoneBook = {
+  Nicol: 1234567,
+  Kim: 1232435,
+  Ali: 1223345,
+  Albert: 3212345,
+};
+console.log(phoneBook);
 
-do {
-  console.log(i);
-  i++;
-} while (i < 20);
-//2
-for (let num = 0; num < 20; num++) {
-  console.log(num);
-}
-hkk
+phoneBook["Sibel"] = 12435467;
+phoneBook["Albert"] = 34433333;
+phoneBook["Nicole"] = 2111111;
+delete phoneBook["Kim"];
+
+// Другой вариант
+console.log(phoneBook.Nicole);
+console.log(phoneBook["Sibel"]);
