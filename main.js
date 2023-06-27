@@ -11,4 +11,6 @@ const phoneBook = {
     }
   };
   delete phoneBook.list["Sam"];
+  phoneBook.list["Dima"] = 22222222;
+  phoneBook.list["Igor"] = 7777777777;
   phoneBook.log(); 
