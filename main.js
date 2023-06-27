@@ -1,7 +1,7 @@
 function calc() {
 	let number1 = prompt('Введите первое число:');
-	let operation = prompt('Введите оператор (+ || add, - || sub, * || mul, / || div):');
 	let number2 = prompt('Введите 2 число:');
+	let operation = prompt('Введите оператор (+ , - , * , / ):');
 	let check1 = parseFloat(number1);
 	let check2 = parseFloat(number2);
 	const ERROR_M1 = 'Вам стоит подробнее узнать про числа.';
