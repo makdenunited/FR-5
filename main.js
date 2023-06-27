@@ -1,20 +1,24 @@
-
-function calc(operation,a,b){
-    switch(operation){
-        case 'add':
-            return a + b;
-        case 'multi':
-            return a * b;
-        case 'div':
-            return a / b;
-        case 'sub':
-            return a - b;
-        default:
-            return "I dont know thise operation";
-    }
+const phoneBook = {
+  "Alex": 89567843,
+  "Dadddy": 89564783845,
+  "Treable": 8965739238954,
 }
-console.log(calc('add' ,1,2));
-console.log(calc('multi' ,1,2));
-console.log(calc('div' ,1,2));
-console.log(calc('sub' ,1,2));
-console.log(calc('' ,1,2));
+console.log(phoneBook);
+phoneBook [" Petru St"] = 89203401273;  
+phoneBook ["Dadddy"] = 1111111;
+delete phoneBook ["Alex"];
+console.log(phoneBook);
+console.log(phoneBook.Dadddy);
+
+const book = {
+  list: {
+    "Martin Eden": "JackLondon",
+    "My Antonia": "WillaCather",
+    "Age of Innocence": "EdithWharton",
+    "Babbit": "SinclairLewis",
+  },
+  log() {
+    console.log(this.list)
+  }
+};
+book.log();
