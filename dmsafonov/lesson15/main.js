@@ -1,34 +1,22 @@
-/*
-Lesson 1
-Попробуйте сами:
-Вывести в консоль числа от 1 до 19 с помощью цикла
-Сделать то же самое но с проверкой условия после тела цикла (do ... while)
-*/
-
-let i = 1;
-
-while(i<=19){
-console.log(i);
-i++
-};
-
-let k = 1;
-
-do{
-console.log(k);
-k++;
-}while(k<=19)
-
-/*
-Lesson 2
-Попробуйте сами:
-Перепишите свои while циклы на циклы for
-Обсудить в чате какой из вариантов вам нравится больше и почему
-*/
-for(let j = 1; j<=19; j++){
-  
-  if(j>5){
-    break
+let phoneBook = {
+  'Alexander': 89088082435,
+  'Natalia': 4235325325,
+  'Yuri': 865235332,
+  'Dmitry Safonov': 24324325,
+  'Dmitry Ivanov': 244235325,
+  del(name){
+    delete this[name];
+    console.log(this);
   }
-  console.log(j);
 };
+console.log(phoneBook);
+console.log(phoneBook['Dmitry Safonov'])
+
+console.log(phoneBook);
+
+phoneBook.Alex = 8942433325;
+console.log(phoneBook);
+phoneBook['Dmitry Safonov'] = 89277770751;
+console.log(phoneBook);
+phoneBook.del('Alexander');
+phoneBook.del('Natalia');
