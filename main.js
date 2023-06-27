@@ -15,7 +15,7 @@ function calc() {
 		alert(`${ERROR_M2}`);
 	} else if (Number.isNaN(check1) || Number.isNaN(check2)) {
 		alert(`Вы ввели: ${number1} ${operation} ${number2} = ?\n${ERROR_M1} `);
-	} else if (operation === DIV && number2 === '0') {
+	} else if (operation === DIV && check2 === 0) {
 		alert(`${number1} / ${number2} = НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ!!`);
 	} else {
 		number1 = parseFloat(number1.replace(/,/,'.'));
