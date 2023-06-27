@@ -8,7 +8,7 @@ for (let i = 1; i <= 13; i++) {
         console.log('Кол-во четных чисел ' + OddCounter)     
     } else {
         EvenCounter++
-        console.log('Кол-во не четных чисел ' + EvenCounter)
+        console.log('Кол-во не  четных чисел ' + EvenCounter)
     }
 }
 
