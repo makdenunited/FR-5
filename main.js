@@ -1,13 +1,6 @@
-function checkAge(age) {
-  switch (age) {
-    case age < 18:
-      console.log("You are not allowed.");
-      break;
-    case age >= 18:
-      console.log("You are welcome!");
-      break;
-    default:
-      console.log("Good.");
-  }
-}
-console.log(18);
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i < 20);
