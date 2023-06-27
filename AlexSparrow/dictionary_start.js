@@ -1,4 +1,4 @@
-const itBlogers = {
+let itBlogers = {
     list: {
         'Стой под стрелой': '@nikitonsky_pub',
         'ityoutubers.com': '@ityoutubers_com',
