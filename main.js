@@ -10,3 +10,7 @@ phoneBook["Sibel"] = 12435467;
 phoneBook["Albert"] = 34433333;
 phoneBook["Nicole"] = 2111111;
 delete phoneBook["Kim"];
+
+// Другой вариант
+console.log(phoneBook.Nicole);
+console.log(phoneBook["Sibel"]);
