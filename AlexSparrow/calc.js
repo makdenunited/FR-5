@@ -1,21 +1,26 @@
+const ADD = 'add';
+const MULTI = 'multi';
+const SUBTRACT = 'subtract';
+const DIVISION = 'division';
+const ERROR_MESSAGE = 'Error operation';
+
+
 function calc(operation, a, b) {
-    a = Number(a);
-    b = Number(b);
-    switch (operation) {
-      case 'add':
-        return a + b;
-        break;
-      case 'multi':
-        return a * b;
-        break;
-      case 'subtract':
-        return a - b;
-        break;
-      case 'division':
-        return (a / b === Infinity) ? 'На ноль делить нельзя' : a / b;
-        break;
-    }
+  const isZero = (a / b === Infinity) ? 'На ноль делить нельзя' : a / b;
+  switch (operation) {
+    case ADD:
+      return a + b;
+    case MULTI:
+      return a * b;
+    case SUBTRACT:
+      return a - b;
+    case DIVISION:
+      return isZero;
+    default:
+      return ERROR_MESSAGE;
+  }
 }
+
 
 console.log(calc('add', 1, 2));
 console.log(calc('multi', 1, 2));
