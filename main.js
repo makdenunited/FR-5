@@ -1,4 +1,4 @@
-const chatActivity = {
+const chat = {
 	list: {
 		"alex lesley": 76647847666478476,
 		"Alexander Lennikov": 76647847678647847,
@@ -11,17 +11,17 @@ const chatActivity = {
 		console.log(this.list);
 	}
 };
-chatActivity.log();
-console.log(chatActivity.list);
-chatActivity.log();
-console.log(chatActivity);
-chatActivity["byka"] = +76647847678647847;
-chatActivity.log();
-console.log(chatActivity);
-delete chatActivity["byka2"];
-chatActivity.log();
-console.log(chatActivity);
-console.log(chatActivity.list);
+chat.log();
+console.log(chat.list);
+chat.log();
+console.log(chat);
+chat["byka"] = +76647847678647847;
+chat.log();
+console.log(chat);
+delete chat["byka2"];
+chat.log();
+console.log(chat);
+console.log(chat.list);
 
 // const phoneBook = {
 // 	'John': 123456789, // ключ John со значением 123456789
