@@ -1,39 +1,41 @@
 function calc() {
-	let a = prompt('Введите первое число:');
-	let x = prompt('Введите оператор (+ || add, - || sub, * || mul, / || div):');
-	let b = prompt('Введите 2 число:');
+	let number1 = prompt('Введите первое число:');
+	let operation = prompt('Введите оператор (+ || add, - || sub, * || mul, / || div):');
+	let number2 = prompt('Введите 2 число:');
+	let check1 = parseFloat(number1);
+	let check2 = parseFloat(number2);
 	const ERROR_M1 = 'Вам стоит подробнее узнать про числа.';
 	const ERROR_M2 = 'Вы не ввели достаточно параметров или...\nВам стоит подробнее узнать про числа и операторы.';
-	let c = parseFloat(a);
-	let d = parseFloat(b);
+	const ADD = '+';
+	const SUB = '-';
+	const MULTI = '*';
+	const DIV = '/';
 
-	if (a === '' || b === '' || x === '' || a === null || b === null || x === null) {
+	if (number1 === '' || number2 === '' || operation === '' || number1 === null || number2 === null || operation === null) {
 		alert(`${ERROR_M2}`);
-	} else if (Number.isNaN(c) || Number.isNaN(d)) {
-		alert(`Вы ввели: ${a} ${x} ${b} = ?\n${ERROR_M1} `);
+	} else if (Number.isNaN(check1) || Number.isNaN(check2)) {
+		alert(`Вы ввели: ${number1} ${operation} ${number2} = ?\n${ERROR_M1} `);
+	} else if (operation === DIV && number2 === '0') {
+		alert(`${number1} / ${number2} = НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ!!`);
 	} else {
-		a = parseFloat(a.replace(/,/,'.'));
-		b = parseFloat(b.replace(/,/,'.'));
-		x = x.trim();
-		switch (x) {
-			case '+':
-			case 'add':
-				alert(`${a} + ${b} = ${a + b}`);
+		number1 = parseFloat(number1.replace(/,/,'.'));
+		number2 = parseFloat(number2.replace(/,/,'.'));
+		operation = operation.trim();
+		switch (operation) {
+			case ADD:
+				alert(`${number1} + ${number2} = ${number1 + number2}`);
 				break;
-			case '-':
-			case 'sub':
-				alert(`${a} - ${b} = ${a - b}`);
+			case SUB:
+				alert(`${number1} - ${number2} = ${number1 - number2}`);
 				break;
-			case '*':
-			case 'mul':
-				alert(`${a} * ${b} = ${a * b}`);
+			case MULTI:
+				alert(`${number1} * ${number2} = ${number1 * number2}`);
 				break;
-			case '/':
-			case 'div':
-				b === 0 ? alert(`${a} / ${b} = НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ!!`) : alert(`${a} / ${b} = ${a / b}`);
+			case DIV:
+				alert(`${number1} / ${number2} = ${number1 / number2}`);
 				break;
 			default:
-				alert(x === '' ? 'Вы не ввели оператор.' : ERROR_M2);
+				alert(operation === '' ? 'Вы не ввели оператор.' : ERROR_M2);
 				break;
 		}
 	}
