@@ -21,5 +21,6 @@ const phoneBook = {
   
   
   for (let name in phoneBook.list) {
-    console.log(name)
+    console.log(`${name} ${phoneBook.list[name]}`)
   }
+
