@@ -27,3 +27,6 @@ for (const name in phoneBook.list) {
     console.log(name + '-'+ phoneBook.list[name]);
     // console.log(phoneBook.list[name] );
   }
+
+  console.log(phoneBook.list.Art);
+  console.log("Rezyapov" in phoneBook.list);
