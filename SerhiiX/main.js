@@ -1,31 +1,35 @@
-let i = 1;
+const phoneBook = {
+  list: {
+    John: 123456789,
+    'Jane Doe': 987654321,
+    'Jim Smith': 111111111,
+  },
+  add(name, number) {
+    this.list[name] = number;
+  },
+  delete(name) {
+    delete this.list[name];
+  },
+  delete(name) {
+    delete this.list[name];
+  },
+};
 
-while (i < 4) {
-  console.log(i);
-  i = i + 1;
-}
+phoneBook.add('Michael Quoker', 4870992863);
+phoneBook.delete('Jim Smith');
+phoneBook.delete('John');
 
-let i = 5;
-do {
-  console.log(i);
-  i = i + 3;
-} while (i < 3);
+console.log(phoneBook.list['Michael Quoker']);
+console.log(phoneBook);
 
-let i = 1;
-do {
-  console.log(i);
-  i = i + 1;
-} while (i <= 19);
+const myPhoneBook = {
+  list: {
+    'Kendrik Nevill': 135791113,
+    'Jacob Avosky': 2468101214,
+    'Massimo Alessio ': 1234567890,
+  },
+};
 
-for (let i = 1; i < 4; i++) {
-  console.log(i);
-}
-
-for (let i = 1; i <= 19; i++) {
-  console.log(i);
-}
-
-for (let i = 0; i < 10; i++) {
-  if (i % 2 == 1) continue;
-  console.log(i);
+for (const name in myPhoneBook.list) {
+  console.log(name + ' - ' + myPhoneBook.list[name]);
 }
